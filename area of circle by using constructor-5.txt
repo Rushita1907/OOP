@@ -1,0 +1,42 @@
+OOP 5th Practical
+
+/*
+Practical Title: 5.Write a cpp program to calculate area of circle by using constructor.
+Name: Samarth Kuwar
+Roll Number: 06
+Batch: S1
+Academic Year: 2023-2024
+*/ 
+
+#include <iostream>
+#define PI 3.141
+using namespace std;
+
+class AreaCircle
+{
+ private:
+ float area;
+ public:
+ AreaCircle(float radius)
+ {
+ area = PI * radius * radius;
+ }
+ void display()
+ {
+ cout << "Area of circle:\t" << area << endl;
+ }
+};
+int main()
+{
+ cout << "Enter value of radius:\t";
+ int radius;
+ cin >> radius;
+ AreaCircle area(radius);
+ area.display();
+ return 0;
+}
+
+OUTPUT
+
+Enter value of radius:	2
+Area of circle:	12.564
