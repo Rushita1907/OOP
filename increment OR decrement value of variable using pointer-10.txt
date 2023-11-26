@@ -1,0 +1,38 @@
+OOP 10th Practical
+
+/*
+Practical Title: 10.Write a cpp program to find out increment/decrement value of variable using pointer.
+Name: Samarth Kuwar
+Roll Number: 06
+Batch: S1
+Academic Year: 2023-2024
+*/ 
+
+#include<iostream>
+using namespace std;
+int main() {
+ int a;
+ int *pt;
+ cout << "Pointer Example C++ Program : Increment and Decrement Integer\n";
+ cout<<"Enter value :";
+ cin>>a;
+ pt = &a;
+ (*pt)++; //Post Increment
+ cout << "\n[a ]:Increment Value of A = " << a;
+ ++(*pt); //Pre Increment
+ cout << "\n[a ]:Increment Value of A = " << a;
+ (*pt)--; //Post Decrement
+ cout << "\n[a ]:Decrement Value of A = " << a;
+ --(*pt); //Pre Decrement
+ cout << "\n[a ]:Decrement Value of A = " << a;
+ return 0;
+}
+
+OUTPUT
+
+Pointer Example C++ Program : Increment and Decrement Integer
+Enter value :5
+[a ]:Increment Value of A = 6
+[a ]:Increment Value of A = 7
+[a ]:Decrement Value of A = 6
+[a ]:Decrement Value of A = 5
